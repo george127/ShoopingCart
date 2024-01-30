@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="./cart.js" async></script>
+
+    <!-- ====== Bootstrapcdn ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+
+    <!-- ======= Font-Awesome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- ========= Fonts Icons ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <!-- ======== Navigation bar ======= -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <h1>ShoeMax</h1>
+            </a>
+            <div class="icons">
+                <span class="material-symbols-outlined" id="search-btn">
+                    search
+                </span>
+                
+                <span class="material-symbols-outlined" id="cart-btn">
+                    shopping_cart_checkout
+                </span>
+                <span id="count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========= Product List ========= -->
+    <br><br><br>
+    <div class="container">
+        <div id="noMatchMessage">
+        </div>
+        
+        <!-- ======= product1 ======== -->
+        <div class="product-list">
+            <div class="product-item shop-item" data-category="nike">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">Nike Vomero 16</h3>
+                    <p class="product-description">The Vomero is one of Nike's cushioned daily trainers, chiefly designed for easy and long runs</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$190.00</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links" id="product-btn">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient1">
+                    <img src="./img/shoe1.png" alt="img" class="shop-item-image">
+                </div>
+            </div>
+            <div class="product-item shop-item" data-category="jordan">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">Yellew Air Jordan 1 Mid</h3>
+                    <p class="product-description">The Air Jordan 1 Mid shoe is inspired by the first AJ1, offering fans of jordan retros a chance to follow.</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$149.88</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links" id="product-btnTwo">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient2">
+                    <img src="./img/shoe2.png" alt="" class="shop-item-image">
+                </div>
+            </div>
+        </div>
+        <!-- ======= End product1 ======== -->
+
+        <!-- ======= product2 ======== -->
+        <div class="product-list">
+            <div class="product-item shop-item" data-category="adidas">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">Adidas Nmd</h3>
+                    <p class="product-description">Born from the track and designed for the city landscape, they blend '80s running style and the best of todays running technology.</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$120.10</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links" id="product-btnThree">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient3">
+                    <img src="./img/shoe3.png" alt="" class="shop-item-image">
+                </div>
+            </div>
+            <div class="product-item shop-item" data-category="new balance">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">New Balance</h3>
+                    <p class="product-description">So many podiatrists recommend New Balance shoes because of how well they support the foot and keep the foot in a neutral position.</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$99.00</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links" id="product-btnFour">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient4">
+                    <img src="./img/shoe4.png" alt="" class="shop-item-image">
+                </div>
+            </div>
+        </div>
+        <!-- ======= End product2 ======== -->
+
+        <!-- ======= product3 ======== -->
+        <div class="product-list">
+            <div class="product-item shop-item" data-category="adidas">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">Adidas NMD R1</h3>
+                    <p class="product-description">This was the first NMD from adidas. With the primeknit and Boost sole is the the shoe the perfect candidate for your newest all day sneaker.</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$189.00</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links" id="product-btnFive">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient5">
+                    <img src="./img/shoe5.png" alt="" class="shop-item-image">
+                </div>
+            </div>
+            <div class="product-item shop-item" data-category="jordan">
+                <div class="product">
+                    <h3 class="product-name shop-item-title">Red Air Jordan 1 Mid</h3>
+                    <p class="product-description">Made from High-quality leather, they'll break in beautifully and stick around for many seasons to come.</p>
+                    <div class="text">
+                        <p class="price shop-item-price">$189.00</p>
+                        <div class="stars">
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                                </span>
+                            <span class="material-symbols-outlined">star
+                            </span>
+                        </div>
+                    </div>
+                    <div class="links shop-item-button">
+                        <span class="material-symbols-outlined">shopping_cart
+                        </span>
+                        Add To Cart
+                    </div>
+                
+                    <div class="links"  id="product-btnSix">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    View Item
+                    </div>
+                </div>
+                <div class="image-container gradient6">
+                    <img src="./img/shoe6.png" alt="" class="shop-item-image">
+                </div>
+            </div>
+        </div>
+        <!-- ======= End product3 ======== -->
+    </div>
+
+    <!-- ======= search ======== -->
+    <div class="search-container" id="search">
+        <div class="container">
+        <span class="material-symbols-outlined" id="search-cancel">close</span>
+        <br><br><br>
+        <div class="input-container">
+        <button>Search</button>
+        <input type="text" id="searchInput" placeholder="Enter Keywords..." title="Search for product" onkeyup="searchList()">
+        </div>
+        </div>
+    </div>
+    <!-- ======= End search ======== -->
+
+    <div class="Pop-up">
+        <!-- ======= product1 ======== -->
+        <div class="product-One" id="product-One">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancel">close</span>
+            <br><br><br>
+            <div class="items">
+                <div class="image-container Gradient1">
+                    <img src="./img/shoe1.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/nike.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color: #d13800;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">$190.00</p>
+                        <p class="price">$200.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- ======= product2 ======== -->
+        <div class="product-One" id="product-Two">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancelTwo">close</span>
+            <br><br><br>
+            <div class="items">
+                <div class="image-container Gradient2">
+                    <img src="./img/shoe2.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/nike.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color: #d1b200;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">149.88</p>
+                        <p class="price">$190.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= product3 ======== -->
+    <div class="product-One" id="product-Three">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancelThree">close</span>
+            <br><br><br>
+            <div class="items">
+                <div class="image-container Gradient3">
+                    <img src="./img/shoe3.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/adidas.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color: #d30000;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">120.10</p>
+                        <p class="price">$190.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= product4 ======== -->
+    <div class="product-One" id="product-Four">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancelFour">close</span>
+            <br><br><br>
+            <div class="items">
+                <div class="image-container Gradient4">
+                    <img src="./img/shoe4.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/adidas.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color: #0157d6;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">99.00</p>
+                        <p class="price">$120.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= product5 ======== -->
+    <div class="product-One" id="product-Five">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancelFive">close</span>
+            <br><br><br>
+            <div class="items">
+                <div class="image-container Gradient5">
+                    <img src="./img/shoe5.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/adidas.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color:#666d5d;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">99.00</p>
+                        <p class="price">$120.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= product6 ======== -->
+    <div class="product-One" id="product-Six">
+        <div class="container">
+            <span class="material-symbols-outlined" id="product-cancelSix">close</span>
+            <br><br><br>
+
+
+
+            
+            <div class="items">
+                <div class="image-container Gradient6">
+                    <img src="./img/shoe6.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="title-container">
+                        <img src="./img/nike.png" alt="">
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-name">Summer Collection</p>
+                    <h1 class="product-description" style="color:#d60000;">Amazing Quality Sneakers</h1>
+                    <div class="text">
+                        <p class="price">99.00</p>
+                        <p class="price">$120.00</p>
+                    </div>
+                    <br>
+                    <div class="drop">
+                        <div class="size dropbtn2">
+                            <p>Choose size</p>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                                </span>
+                        </div>
+                        <div class="size-container">
+                            <p class="num">23</p>
+                            <p class="num">28</p>
+                            <p class="num">35</p>
+                            <p class="num">40</p>
+                            <p class="num">45</p>
+                            <p class="num">50</p>
+                            <p class="num">54</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- ======= cart ======== -->
+    <div class="cart-structure" id="cart">
+        <div class="container">
+            <span class="material-symbols-outlined" id="cart-cancel">close</span>
+            <br><br><br>
+            <div class="title">
+                <h3>Shopping Cart</h3>
+                <p><span id="Count">0</span> items</p>
+            </div>
+            <br>
+            <div class="cart-details">
+                <div class="products cart-row">
+                    <div class="item">
+                        <p>product</p>
+                    </div>
+                    <div class="item">
+                        <p>price</p>
+                    </div>
+                    <div class="item">
+                        <p>quantity</p>
+                    </div>
+                    <div class="item">
+                        <p>remove</p>
+                    </div>
+                </div>
+                <div class="cart-items">
+                </div>
+            </div>
+            <br><br>
+            <h3>Summary</h3>
+            <br>
+            <div class="cart-total">
+                <p>SHIPPING</p>
+                <div class="shipping-container">
+                    <select id="shipping-options" name="shipping-options">
+                        <option value="standard">Standard Shipping - $X.XX (5-7 business days)</option>
+                        <option value="expedited">Expedited Shipping - $X.XX (2-3 business days)</option>
+                        <option value="express">Express Shipping - $X.XX (1-2 business days)</option>
+                    </select>
+                </div>
+                <br>
+                <p>GIVE CODE</p>
+                <div class="input-container">
+                <input type="text" name="gift-code" id="searchInput" placeholder="Enter your code">
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                    </span>
+                </div>
+                <br>
+                <div class="total-result">
+                    <span>TOTAL PRICE</span>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <br>
+                <button type="button" class="btn-purchase">CHECKOUT</button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- ======= end cart ======== -->
+
+   
+
+    <script src="./main.js"></script>
+</body>
+</html>
